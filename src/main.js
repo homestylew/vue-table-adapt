@@ -2,8 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import toast from "./components/index";
-Vue.use(toast);
+// import adapt from "./components/index";
+// Vue.use(adapt);
+import adapt from "table-adapt";
+Vue.use(adapt);
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false;
 

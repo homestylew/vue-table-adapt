@@ -1,14 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HelloWorld from "../components/HelloWorld";
+import Test from '../components/Test'
+import Adapt from '../components/Adapt'
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "HelloWorld",
-    component: HelloWorld
+    path: '/',
+    name: 'adapt',
+    title: '自适应',
+    component: Adapt,
+  },
+  {
+    path: '/test',
+    name: '/test',
+    title: '测试移除监听',
+    component: Test,
   },
 ];
 
